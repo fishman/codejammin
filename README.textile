@@ -1,0 +1,44 @@
+h1. Codejammin
+
+h2. Ruby on Rails
+
+This application requires:
+
+* Ruby version 1.9.3
+* Rails version 3.2.11
+
+Learn more about "Installing Rails":http://railsapps.github.com/installing-rails.html.
+
+h2. Database
+
+PostgreSQL
+
+h2. Development
+
+* Template Engine: ERB
+* Testing Framework: RSpec and Factory Girl and Cucumber
+* Front-end Framework: Twitter Bootstrap (Sass)
+* Form Builder: SimpleForm
+* Authentication: Devise
+* Authorization: CanCan
+
+h2. Email
+
+Postmark
+
+h2. Getting Started
+
+
+
+h2. Documentation and Support
+
+
+
+h4. Issues
+
+Known issues
+
+
+h2. License
+
+GPL for now

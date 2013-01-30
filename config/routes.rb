@@ -6,6 +6,6 @@ Codejammin::Application.routes.draw do
     root :to => 'home#index'
   end
   root :to => "home#index"
-  devise_for :users, :skip => [:sessions]
+  devise_for :users, :skip => [:sessions],  :controllers => { :registrations => "registrations" }
   resources :users
 end

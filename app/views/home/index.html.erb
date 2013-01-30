@@ -5,13 +5,13 @@
 
 <section id="signup">
   <div class="signup-container">
-    <form class="signup-form" action="/users" method="post">
-      <div class="inputs">
-        <input class="email-input" type="text" placeholder="Name" />
-        <input class="email-input" type="email" placeholder="your@email.com" />
-        <button class="btn-join">Join Us!</button>
-      </div>
-    </form>
+    <%= form_for User.new,  :html => { :class => "signup-form" } do |f| %>
+        <div class="inputs">
+          <%= f.text_field :name, class: "email-input", placeholder: "Name" %>
+          <%= f.text_field :email, class: "email-input", placeholder: "your@email.com" %>
+          <button class="btn-join">Join Us!</button>
+        </div>
+      <% end %>
   </div>
 </section>
 

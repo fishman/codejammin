@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
   def index
-    @users = User.all
+  end
+
+  def signup_confirmation
+    
   end
 end

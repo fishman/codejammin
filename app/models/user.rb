@@ -12,6 +12,8 @@ class User < ActiveRecord::Base
 
   after_create :add_user_to_mailchimp unless Rails.env.test?
   before_destroy :remove_user_from_mailchimp unless Rails.env.test?
+  
+  validates_presence_of :name
 
 
   validates_confirmation_of :password

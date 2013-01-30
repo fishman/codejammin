@@ -1,4 +1,36 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+<section id="headline">
+  <h1>Codejamm.in</h1>
+  <h2>Come join us in Lafayette, Feb 2nd</h2>
+</section>
+
+<section id="signup">
+  <div class="signup-container">
+    <form class="signup-form" action="/users" method="post">
+      <div class="inputs">
+        <input class="email-input" type="text" placeholder="Name" />
+        <input class="email-input" type="email" placeholder="your@email.com" />
+        <button class="btn-join">Join Us!</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="info">
+  <div class="infoboxes">
+    <h3>What, Who?</h3>
+    <p>This CodeJam will be the first in a series of Hackathon's hosted by Reza Jelveh.</p>
+    <p>The goal is to instantiate, or get used to a mindset of ship or GTFO.</p>
+    <p>Whether you're a product person, a code wiz, or an awesome designer, the idea is to bash out a working prototype by the end of the day.</p>
+  </div>
+  <div class="infoboxes">
+    <h3>When?</h3>
+    <p>We will be starting registrations on February the 2nd 2013 at 9am. Kick off will be an hour later at 10am</p>
+    <p>If you feel like trying something new <a href="http://twilio.com" target="_blank">Twilio</a>, and <a href="http://pusher.com">Pusher</a> were kind enough to provide us with some goodies for the participants. We'll have a few quick API demos for that purpose.</p>
+  </div>
+  <div class="infoboxes">
+    <h3>Where?</h3>
+    <p>Bob Miller from the <a href="http://www.opportunitymachine.org/" target="_blank">Opportunity Machine</a> was kind enough to offer us the Switch in Downtown Lafayette.</p>
+    <p>The address is <a href="http://goo.gl/maps/AClfj" target="_blank">100 Central Street, 70501 Lafayette, LA</a></p>
+
+  </div>
+</section>

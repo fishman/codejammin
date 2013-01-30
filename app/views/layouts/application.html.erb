@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Codejammin" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Codejamm.in" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Codejammin" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
@@ -11,7 +11,7 @@
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
     <header class="navbar navbar-fixed-top">
-      <nav class="navbar-inner">
+      <nav class="navbar-inner centered-pills">
         <div class="container">
           <%= render 'layouts/navigation' %>
         </div>
@@ -20,15 +20,13 @@
     <div id="main" role="main">
       <div class="container">
         <div class="content">
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
-            </div>
+          <div class="mainContent">
+            <%= render 'layouts/messages' %>
+            <%= yield %>
           </div>
-          <footer>
-          </footer>
         </div>
+        <footer>
+        </footer>
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
   </body>

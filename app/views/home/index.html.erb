@@ -3,17 +3,19 @@
   <h2>Come join us in Lafayette, Feb 2nd</h2>
 </section>
 
-<section id="signup">
-  <div class="signup-container">
-    <%= form_for User.new,  :html => { :class => "signup-form" } do |f| %>
+<% unless current_user  %>
+  <section id="signup">
+    <div class="signup-container">
+      <%= form_for User.new,  :html => { :class => "signup-form" } do |f| %>
         <div class="inputs">
           <%= f.text_field :name, class: "email-input", placeholder: "Name" %>
           <%= f.text_field :email, class: "email-input", placeholder: "your@email.com" %>
           <button class="btn-join">Join Us!</button>
         </div>
       <% end %>
-  </div>
-</section>
+    </div>
+  </section>
+<% end -%>
 
 <section id="info">
   <div class="infoboxes">
